@@ -1,10 +1,10 @@
-# OAuth2 [![Build Status](https://secure.travis-ci.org/intridea/oauth2.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/intridea/oauth2.png?travis)][gemnasium]
+# OAuth2 [![Build Status](https://secure.travis-ci.org/joe1chen/oauth2.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/intridea/oauth2.png?travis)][gemnasium]
 A Ruby wrapper for the OAuth 2.0 specification. This is a work in progress,
 being built first to solve the pragmatic process of connecting to existing
 OAuth 2.0 endpoints (a.k.a. Facebook) with the goal of building it up to meet
 the entire specification over time.
 
-[travis]: http://travis-ci.org/intridea/oauth2
+[travis]: http://travis-ci.org/joe1chen/oauth2
 [gemnasium]: https://gemnasium.com/intridea/oauth2
 
 ## <a name="installation"></a>Installation
