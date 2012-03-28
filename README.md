@@ -104,13 +104,14 @@ implementations:
 * Ruby 1.8.7
 * Ruby 1.9.2
 * Ruby 1.9.3
-* [JRuby][]
 * [Rubinius][]
 * [Ruby Enterprise Edition][ree]
 
-[jruby]: http://www.jruby.org/
 [rubinius]: http://rubini.us/
 [ree]: http://www.rubyenterpriseedition.com/
+
+This fork of oauth2 relies on Typhoeus, which utilizes a native library. Thus, JRuby
+is no longer supported. If you wish to use this with JRuby, use the official oauth2 gem.
 
 If something doesn't work on one of these interpreters, it should be considered
 a bug.
