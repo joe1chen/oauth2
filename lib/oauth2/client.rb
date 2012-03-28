@@ -48,7 +48,9 @@ module OAuth2
     # The Faraday connection object
     def connection
       @connection ||= begin
-        conn = Faraday.new(site, options[:connection_opts])
+        conn = Faraday.new(site, options[:connection_opts]) do |builder|
+          builder.adapter :typhoeus
+        end
         conn.build do |b|
           options[:connection_build].call(b)
         end if options[:connection_build]
