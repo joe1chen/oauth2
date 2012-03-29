@@ -48,8 +48,14 @@ module OAuth2
     # The Faraday connection object
     def connection
       @connection ||= begin
+        if defined? ::Typhoeus
+          adapter = :typhoeus
+        else
+          adapter = :net_http
+        end
         conn = Faraday.new(site, options[:connection_opts]) do |builder|
-          builder.adapter :typhoeus
+          builder.request :url_encoded
+          builder.adapter adapter
         end
         conn.build do |b|
           options[:connection_build].call(b)
